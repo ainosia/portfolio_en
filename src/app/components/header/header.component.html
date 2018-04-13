@@ -1,0 +1,36 @@
+<nav class="menu">
+  <img src="assets/img/basic/logo.svg" alt="Logo">
+  <a [routerLink]="['.']" class="menu-trigger">&#9776;</a>
+  <ul>
+    <li>
+      <a
+        [routerLink]="['proyectos']"
+        fragment="proyectos"
+        class="desplazar"
+        data-nivel="#proyectos">
+        Proyectos
+      </a>
+    </li>
+    <li>
+      <a
+        [routerLink]="['conocimientos']"
+        fragment="conocimientos"
+        class="desplazar"
+        data-nivel="#conocimientos">
+        Conocimientos
+      </a>
+    </li>
+    <li>
+      <a
+        [routerLink]="['sobre_mi']"
+        fragment="sobre_mi"
+        class="desplazar"
+        data-nivel="#sobre_mi">
+        Sobre mí
+      </a>
+    </li>
+    <li>
+      <a href="assets/docs/cv_SoniaVilla.pdf" download="CV.pdf">CV</a>
+    </li>
+  </ul>
+</nav>
