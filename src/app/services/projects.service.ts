@@ -16,6 +16,7 @@ export class ProjectsService {
     this.http.get('https://porfolioangular.firebaseio.com/proyectos_idx.json')
     .subscribe(res => {
       console.log(res.json());
+      this.projects = res.json();
       this.loading = false;
     })
   }
