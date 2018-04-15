@@ -9,10 +9,15 @@
       </div>
     </div>
 
-    <div *ngIf="_ps.projects.length > 0" class="ae-masonry ae-masonry-md-2 ae-masonry-xl-5">
+    <div class="overlay" *ngIf="_ps.loading">
+      <div class="spinner"></div>
+    </div>
+
+    <div *ngIf="_ps.projects.length > 0 && !loading" class="ae-masonry ae-masonry-md-2 ae-masonry-xl-5 animated fadeIn">
       <a *ngFor="let project of _ps.projects"
-        href="item1.html" class="rk-item ae-masonry__item">
-        <img src="assets/img/projects/{{ project.url1 }}" alt="Imagen {{ project.title }}">
+        [routerLink]="['/proyecto', project.code]"
+        class="rk-item ae-masonry__item">
+        <img src="assets/img/projects/{{ project.code }}/main.png" alt="Imagen {{ project.title }}">
         <div class="item-meta">
           <h2>{{ project.title }}</h2>
           <p>{{ project.tech }}</p>

@@ -15,9 +15,12 @@ export class ProjectsService {
     this.loading = true;
     this.http.get('https://porfolioangular.firebaseio.com/proyectos_idx.json')
     .subscribe(res => {
-      console.log(res.json());
-      this.projects = res.json();
       this.loading = false;
-    })
+      this.projects = res.json();
+    });
+  }
+
+  public loadProject(code:string) {
+    return this.http.get(`https://porfolioangular.firebaseio.com/proyectos/${ code }.json`);
   }
 }

@@ -1,15 +1,29 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { ProjectsService } from '../../services/projects.service';
 
 @Component({
   selector: 'app-project',
   templateUrl: './project.component.html',
   styles: []
 })
-export class ProjectComponent implements OnInit {
+export class ProjectComponent {
 
-  constructor() { }
+  project:any = undefined;
+  code:string = undefined;
 
-  ngOnInit() {
+  constructor(
+    private route:ActivatedRoute,
+    private _ps:ProjectsService
+  )
+  {
+    route.params.subscribe(param => {
+      _ps.loadProject(param['id']).subscribe(res => {
+        this.code = param['id'];
+        this.project = res.json();
+        console.log(this.project);
+      });
+    })
   }
 
 }

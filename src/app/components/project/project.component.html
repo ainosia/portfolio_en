@@ -1,48 +1,46 @@
 <main class="stick project animated fadeIn">
-  <section class="grey-section">
-    <div class="row cover_img item1">
-      <header>
-        <h1>Red Social MEAN</h1>
-        <h2>MongoDB, Express.js, Angular, Node.js</h2>
-      </header>
-    </div>
-  </section>
+  <div *ngIf="project">
+    <section class="grey-section">
+      <!-- assets/img/projects/{{ code }}/main.png -->
+      <div
+        [ngStyle]="{ 'background-image':'url(assets/img/projects/'+ code +'/main.png)' }"
+        class="row cover_img">
+        <header>
+          <h1>{{ project.title }}</h1>
+          <h2>{{ project.tech }}</h2>
+        </header>
+      </div>
+    </section>
 
-  <section class="padding-section">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6 col-sm-6">
-          <header>
-            <h2>Como <span class="mano-alzada">Twitter</span></h2>
-          </header>
-          <div class="divider"></div>
-          <p>
-            Este proyecto pertenece a una serie de aplicaciones realizadas combinando Angular con otras tecnologías (en este caso
-            MogoDB, Express.js y Node.js) y está llevada a cabo tanto a nivel de <span class="highlight">frontend</span> como de
-            <span class="highlight">backend</span>, empleando únicamente JavaScript.
-          </p>
-          <p>
-            Es una red social similar a Twitter, que incluye control de acceso y que permite registrar usuarios, añadir
-            publicaciones y seguidores, seguir a otros usuarios, etc.
-          </p>
-          <p class="git">
-            <i class="fab fa-github"></i><a href="/">https://github.com/Social-Mean</a>
-          </p>
-        </div>
-        <div class="col-md-6 col-sm-6">
-          <img src="assets/img/projects/project-1b.png" alt="proyecto 1">
+    <section class="padding-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-sm-6">
+            <header>
+              <h2>{{ project.remark }} <span class="mano-alzada">{{ project.subtitle }}</span></h2>
+            </header>
+            <div class="divider"></div>
+            <p>{{ project.desc1 }}</p>
+            <p>{{ project.desc2 }}</p>
+            <p class="git">
+              <i class="fab fa-github"></i><a href="/">https://github.com/Social-Mean</a>
+            </p>
+          </div>
+          <div class="col-md-6 col-sm-6">
+            <img src="assets/img/projects/{{ code }}/pic-1.png" alt="Imagen {{ project.title }}">
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="grey-section">
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-12 content_centered">
-          <img src="assets/img/projects/project-1.png" alt="proyecto 1">
+    <section class="grey-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 content_centered">
+            <img src="assets/img/projects/{{ code }}/main.png" alt="Imagen {{ project.title }}">
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </div>
 </main>

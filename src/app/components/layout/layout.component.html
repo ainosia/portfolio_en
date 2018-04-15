@@ -1,5 +1,4 @@
-<app-intro *ngIf="router.url !== '/proyecto'"></app-intro>
-<!-- <app-intro></app-intro> -->
+<app-intro *ngIf="router.url.indexOf('/proyecto/pr-')"></app-intro>
 <app-header></app-header>
 <router-outlet></router-outlet>
 <app-footer></app-footer>
