@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpModule } from '@angular/http';
+import {APP_BASE_HREF} from '@angular/common';
 
 // Rutas
 import { app_routing } from './app.routes';
@@ -40,7 +41,8 @@ import { HomeComponent } from './components/home/home.component';
     app_routing
   ],
   providers: [
-    ProjectsService
+    ProjectsService,
+    { provide: APP_BASE_HREF, useValue : '/' }
   ],
   bootstrap: [AppComponent]
 })
