@@ -542,7 +542,10 @@ a.index {
     color: #fff;
 }
 
-#skills .numero_big { font-size: 75px; }
+#skills .numero_big {
+  font-size: 70px;
+  line-height: 70px;
+}
 
 #skills article {
     text-align: center;
