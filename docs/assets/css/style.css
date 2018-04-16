@@ -676,6 +676,7 @@ a.index {
   text-align: center;
   width: 100%;
   padding: 0 15px;
+  overflow-x: hidden;
 }
 
 .cover_img h1 {
