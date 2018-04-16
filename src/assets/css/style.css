@@ -679,6 +679,7 @@ a.index {
 }
 
 .cover_img h1 {
+  font-weight: normal;
   padding: 10px 0px 0;
   text-transform: uppercase;
   letter-spacing: 0.2em;
