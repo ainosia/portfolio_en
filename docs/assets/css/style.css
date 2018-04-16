@@ -1,5 +1,7 @@
 /* ------------------ ESTILOS GENERALES ------------------*/
 
+* { overflow-x: hidden; }
+
 body {
     overflow-x: hidden !important;
     overflow-y: scroll;
@@ -676,7 +678,6 @@ a.index {
   text-align: center;
   width: 100%;
   padding: 0 15px;
-  overflow-x: hidden;
 }
 
 .cover_img h1 {
