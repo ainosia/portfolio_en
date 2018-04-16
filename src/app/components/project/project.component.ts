@@ -21,7 +21,6 @@ export class ProjectComponent {
       _ps.loadProject(param['id']).subscribe(res => {
         this.code = param['id'];
         this.project = res.json();
-        console.log(this.project);
       });
     })
   }

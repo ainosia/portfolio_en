@@ -1,36 +1,42 @@
 <nav class="menu">
-  <img src="assets/img/basic/logo.svg" alt="Logo">
+  <a href="/"><img src="assets/img/basic/logo.svg" alt="Logo"></a>
   <a [routerLink]="['.']" class="menu-trigger">&#9776;</a>
   <ul>
     <li>
       <a
-        [routerLink]="['proyectos']"
+        [routerLink]="['/proyectos']"
         fragment="proyectos"
         class="desplazar"
         data-nivel="#proyectos">
+        <i class="fas fa-code-branch"></i>
         Proyectos
       </a>
     </li>
     <li>
       <a
-        [routerLink]="['conocimientos']"
+        [routerLink]="['/conocimientos']"
         fragment="conocimientos"
         class="desplazar"
         data-nivel="#conocimientos">
+        <i class="far fa-lightbulb"></i>
         Conocimientos
       </a>
     </li>
     <li>
       <a
-        [routerLink]="['sobre_mi']"
+        [routerLink]="['/sobre_mi']"
         fragment="sobre_mi"
         class="desplazar"
         data-nivel="#sobre_mi">
+        <i class="fas fa-street-view"></i>
         Sobre mí
       </a>
     </li>
     <li>
-      <a href="assets/docs/cv_SoniaVilla.pdf" download="CV.pdf">CV</a>
+      <a href="assets/docs/cv_SoniaVilla.pdf" download="CV.pdf">
+        <i class="far fa-file-pdf"></i>
+        CV
+      </a>
     </li>
   </ul>
 </nav>

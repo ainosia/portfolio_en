@@ -1,6 +1,6 @@
-<main class="stick project animated fadeIn">
+<main id="proyecto" class="stick">
   <div *ngIf="project">
-    <section class="grey-section">
+    <section class="grey-section animated fadeIn">
       <!-- assets/img/projects/{{ code }}/main.png -->
       <div
         [ngStyle]="{ 'background-image':'url(assets/img/projects/'+ code +'/main.png)' }"
@@ -22,8 +22,8 @@
             <div class="divider"></div>
             <p>{{ project.desc1 }}</p>
             <p>{{ project.desc2 }}</p>
-            <p class="git">
-              <i class="fab fa-github"></i><a href="/">https://github.com/Social-Mean</a>
+            <p *ngIf="project.url" class="git">
+              <i class="fab fa-github"></i><a href="/">{{ project.url }}</a>
             </p>
           </div>
           <div class="col-md-6 col-sm-6">
