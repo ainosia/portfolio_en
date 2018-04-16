@@ -41,8 +41,8 @@ import { HomeComponent } from './components/home/home.component';
     app_routing
   ],
   providers: [
-    ProjectsService
-    // { provide: APP_BASE_HREF, useValue : '/' }
+    ProjectsService,
+    { provide: APP_BASE_HREF, useValue : '/' }
   ],
   bootstrap: [AppComponent]
 })
