@@ -543,8 +543,8 @@ a.index {
 }
 
 #skills .numero_big {
-  font-size: 70px;
-  line-height: 70px;
+  font-size: 75px;
+  line-height: 75px !important;
 }
 
 #skills article {
