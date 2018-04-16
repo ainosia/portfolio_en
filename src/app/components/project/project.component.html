@@ -23,7 +23,7 @@
             <p>{{ project.desc1 }}</p>
             <p>{{ project.desc2 }}</p>
             <p *ngIf="project.url" class="git">
-              <i class="fab fa-github"></i><a href="/">{{ project.url }}</a>
+              <i class="fab fa-github"></i><a href="{{ project.url }}" target="_blank">{{ project.url }}</a>
             </p>
           </div>
           <div class="col-md-6 col-sm-6">
