@@ -13,7 +13,7 @@
       <div class="spinner"></div>
     </div>
 
-    <div *ngIf="_ps.projects.length > 0 && !loading" class="ae-masonry ae-masonry-md-2 ae-masonry-xl-5 animated fadeIn">
+    <div *ngIf="_ps.projects.length > 0 && !_ps.loading" class="ae-masonry ae-masonry-md-2 ae-masonry-xl-5 animated fadeIn">
       <a *ngFor="let project of _ps.projects"
         [routerLink]="['/proyecto', project.code]"
         class="rk-item ae-masonry__item">

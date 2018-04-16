@@ -97,12 +97,17 @@ export class LayoutComponent implements OnInit {
         $('nav ul').slideToggle(768);
       });
 
+      $('nav ul li').click(function() {
+        if ($(window).width() < 768) {
+          $('nav ul').css('display', 'none');
+        }
+      });
+
       $(window).resize(function() {
-    		if (  $(window).width() > 768 ) {
-    			$('nav ul').removeAttr('style');
+    		if (  $(window).width() >= 768 ) {
+    			$('nav ul').css('display', 'none');
     		 }
     	});
     });
   }
-
 }

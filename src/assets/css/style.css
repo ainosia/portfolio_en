@@ -678,7 +678,7 @@ a.index {
 }
 
 .cover_img h1 {
-  padding: 10px 30px 0;
+  padding: 10px 0px 0;
   text-transform: uppercase;
   letter-spacing: 0.2em;
   color: #8f00ff;
@@ -745,6 +745,9 @@ footer p {
     color:#8f00ff;
     font-size: 3rem;
     float: right;
+    line-height: 62px;
+    padding: 0 10px;
+    margin: 5px 8px;
   }
 
   nav ul {
