@@ -108,6 +108,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
+// import {APP_BASE_HREF} from '@angular/common';
 // Rutas
 
 // Servicios
@@ -147,6 +148,7 @@ var AppModule = /** @class */ (function () {
             ],
             providers: [
                 __WEBPACK_IMPORTED_MODULE_4__services_projects_service__["a" /* ProjectsService */]
+                // { provide: APP_BASE_HREF, useValue : '/' }
             ],
             bootstrap: [__WEBPACK_IMPORTED_MODULE_5__app_component__["a" /* AppComponent */]]
         })
@@ -265,7 +267,7 @@ var FooterComponent = /** @class */ (function () {
 /***/ "../../../../../src/app/components/header/header.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<nav class=\"menu\">\n  <a [routerLink]=\"['/home']\" target=\"_top\"><img src=\"assets/img/basic/logo.svg\" alt=\"Logo\"></a>\n  <a [routerLink]=\"['/']\" class=\"menu-trigger\">&#9776;</a>\n  <ul>\n    <li>\n      <a\n        [routerLink]=\"['/proyectos']\"\n        fragment=\"proyectos\"\n        class=\"desplazar\"\n        data-nivel=\"#proyectos\">\n        <i class=\"fas fa-code-branch\"></i>\n        Proyectos\n      </a>\n    </li>\n    <li>\n      <a\n        [routerLink]=\"['/conocimientos']\"\n        fragment=\"conocimientos\"\n        class=\"desplazar\"\n        data-nivel=\"#conocimientos\">\n        <i class=\"far fa-lightbulb\"></i>\n        Conocimientos\n      </a>\n    </li>\n    <li>\n      <a\n        [routerLink]=\"['/sobre_mi']\"\n        fragment=\"sobre_mi\"\n        class=\"desplazar\"\n        data-nivel=\"#sobre_mi\">\n        <i class=\"fas fa-street-view\"></i>\n        Sobre mí\n      </a>\n    </li>\n    <li>\n      <a href=\"assets/docs/cv_SoniaVilla.pdf\" download=\"CV.pdf\">\n        <i class=\"far fa-file-pdf\"></i>\n        CV\n      </a>\n    </li>\n  </ul>\n</nav>\n"
+module.exports = "<nav class=\"menu\">\n  <a [routerLink]=\"['/proyectos']\"><img src=\"assets/img/basic/logo.svg\" alt=\"Logo\"></a>\n  <a [routerLink]=\"['/']\" class=\"menu-trigger\">&#9776;</a>\n  <ul>\n    <li>\n      <a\n        [routerLink]=\"['/proyectos']\"\n        fragment=\"proyectos\"\n        class=\"desplazar\"\n        data-nivel=\"#proyectos\">\n        <i class=\"fas fa-code-branch\"></i>\n        Proyectos\n      </a>\n    </li>\n    <li>\n      <a\n        [routerLink]=\"['/conocimientos']\"\n        fragment=\"conocimientos\"\n        class=\"desplazar\"\n        data-nivel=\"#conocimientos\">\n        <i class=\"far fa-lightbulb\"></i>\n        Conocimientos\n      </a>\n    </li>\n    <li>\n      <a\n        [routerLink]=\"['/sobre_mi']\"\n        fragment=\"sobre_mi\"\n        class=\"desplazar\"\n        data-nivel=\"#sobre_mi\">\n        <i class=\"fas fa-street-view\"></i>\n        Sobre mí\n      </a>\n    </li>\n    <li>\n      <a href=\"assets/docs/cv_SoniaVilla.pdf\" download=\"CV.pdf\">\n        <i class=\"far fa-file-pdf\"></i>\n        CV\n      </a>\n    </li>\n  </ul>\n</nav>\n"
 
 /***/ }),
 
