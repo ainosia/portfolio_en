@@ -6,9 +6,9 @@ import {
 } from './components/index';
 
 const app_routes: Routes = [
-  { path: 'home', component: HomeComponent },
+  { path: '', component: HomeComponent },
   { path: 'proyecto/:id', component: ProjectComponent },
-  { path: '**', pathMatch: 'full', redirectTo: 'home' }
+  { path: '**', pathMatch: 'full', redirectTo: '' }
 ];
 
 export const app_routing = RouterModule.forRoot(app_routes);
