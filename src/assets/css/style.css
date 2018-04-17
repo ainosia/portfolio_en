@@ -4,7 +4,6 @@
 
 body {
     overflow-x: hidden !important;
-    overflow-y: scroll;
     font-family: "Montserrat",sans-serif;
     font-size: .95em;
     font-weight: 400;
