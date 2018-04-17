@@ -663,6 +663,8 @@ a.index {
 
 /* ------------------ SECCIÓN ITEM ------------------*/
 
+#proyecto { overflow: hidden; }
+
 .cover_img {
 	background-position: 50% 100%;
 	background-size: cover;
