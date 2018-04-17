@@ -669,9 +669,8 @@ a.index {
   background-repeat: no-repeat;
 	height: 45rem;
   position: relative;
+  overflow: hidden;
 }
-
-.cover_img * { overflow: hidden; }
 
 .cover_img > header {
   position: absolute;
