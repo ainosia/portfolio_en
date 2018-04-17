@@ -663,8 +663,6 @@ a.index {
 
 /* ------------------ SECCIÓN ITEM ------------------*/
 
-#proyecto { overflow: hidden; }
-
 .cover_img {
 	background-position: 50% 100%;
 	background-size: cover;
@@ -680,7 +678,7 @@ a.index {
   right: 0;
   background: rgba(255, 255, 255, 0.7);
   text-align: center;
-  width: 100%;
+  width: calc(100% - 30px);
   padding: 0 15px;
 }
 
