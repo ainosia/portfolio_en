@@ -668,9 +668,10 @@ a.index {
 	background-size: cover;
   background-repeat: no-repeat;
 	height: 45rem;
-  width: auto;
+  width: 100%;
   position: relative;
   overflow-x: hidden;
+  margin: 0;
 }
 
 .cover_img > header {
@@ -680,8 +681,6 @@ a.index {
   right: 0;
   background: rgba(255, 255, 255, 0.7);
   text-align: center;
-  width: 100%;
-  overflow-x: hidden;
   padding: 0 15px;
 }
 
