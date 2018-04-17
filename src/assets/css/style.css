@@ -2,7 +2,7 @@
 
 
 body {
-    overflow-x: hidden !important;
+    overflow-x: scroll;
     font-family: "Montserrat",sans-serif;
     font-size: .95em;
     font-weight: 400;
@@ -669,8 +669,6 @@ a.index {
   background-repeat: no-repeat;
 	height: 45rem;
   position: relative;
-  overflow: hidden;
-  width: calc(100% + 30px);
 }
 
 .cover_img > header {
