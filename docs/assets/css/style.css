@@ -678,7 +678,8 @@ a.index {
   right: 0;
   background: rgba(255, 255, 255, 0.7);
   text-align: center;
-  width: calc(100% - 30px);
+  width: 100%;
+  overflow-x: hidden;
   padding: 0 15px;
 }
 
