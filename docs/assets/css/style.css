@@ -668,7 +668,7 @@ a.index {
 	background-size: cover;
   background-repeat: no-repeat;
 	height: 45rem;
-  width: calc(100% + 15px);
+  width: auto;
   position: relative;
 }
 
@@ -781,6 +781,8 @@ footer p {
   #sobre_mi .row > div:last-child {
     position: relative;
   }
+
+  .cover_img h1 { font-size: 30px; }
 
   footer .row > div {
     display: block;
