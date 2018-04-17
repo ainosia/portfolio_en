@@ -668,7 +668,7 @@ a.index {
 	background-size: cover;
   background-repeat: no-repeat;
 	height: 45rem;
-  width: 100%;
+  width: calc(100% + 30px);
   position: relative;
 }
 
