@@ -524,14 +524,14 @@ a.index {
 }
 
 #skills i {
-    margin-bottom: 25px;
+    margin-bottom: 20px;
     font-size: 6em;
     color: white;
     opacity: 0.6;
 }
 
 #skills .numero {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     font-family: "Montserrat",sans-serif;
     font-size: 42px;
     line-height: 60px;
@@ -541,8 +541,8 @@ a.index {
 }
 
 #skills .numero_big {
-  font-size: 60px;
-  line-height: 60px !important;
+  font-size: 75px;
+  line-height: 75px !important;
   font-weight: normal;
 }
 
