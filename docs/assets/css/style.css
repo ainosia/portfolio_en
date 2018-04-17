@@ -2,7 +2,7 @@
 
 
 body {
-    overflow-x: scroll;
+    overflow-x: hidden;
     font-family: "Montserrat",sans-serif;
     font-size: .95em;
     font-weight: 400;
@@ -668,6 +668,7 @@ a.index {
 	background-size: cover;
   background-repeat: no-repeat;
 	height: 45rem;
+  width: 100%;
   position: relative;
 }
 
