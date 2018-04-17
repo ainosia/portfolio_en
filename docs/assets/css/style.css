@@ -524,7 +524,7 @@ a.index {
 }
 
 #skills i {
-    margin-bottom: 40px;
+    margin-bottom: 25px;
     font-size: 6em;
     color: white;
     opacity: 0.6;
@@ -670,6 +670,8 @@ a.index {
 	height: 45rem;
   position: relative;
 }
+
+.cover_img * { overflow: hidden; }
 
 .cover_img > header {
   position: absolute;
