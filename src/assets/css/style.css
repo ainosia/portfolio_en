@@ -276,6 +276,7 @@ nav {
   border-top: 1px solid #d8d8e7;
   z-index: 900;
   transition: all .5s cubic-bezier(0.190, 0.585, 0.285, 0.865);
+  overflow: hidden;
 }
 
 nav ul { float: right; }
