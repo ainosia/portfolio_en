@@ -1,0 +1,797 @@
+/* ------------------ ESTILOS GENERALES ------------------*/
+
+
+body {
+    overflow-x: hidden !important;
+    font-family: "Montserrat",sans-serif;
+    font-size: .95em;
+    font-weight: 400;
+    line-height: 23px;
+    color: #666;
+    background-color: #fff;
+    position: relative;
+}
+
+li { list-style: none; }
+
+p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.5em;
+    font-weight: 400;
+    line-height: 1.75em;
+    margin-bottom: 1.75em;
+    text-align: justify;
+}
+
+q {
+  color: #f213b7;
+  font-size: 1.55em;
+  display: block;
+  margin-bottom: 2.5em;
+}
+
+h1.main {
+    text-transform: uppercase;
+    font-size: 4.5em;
+    font-weight: normal;
+    line-height: 1.313em;
+    letter-spacing: 0.3em;
+    font-family: 'Lato',sans-serif;
+    color: #F213B7;
+    margin-top: 40px;
+    /* opacity: 0;
+    transition: all 1s; */
+}
+
+h1.main code {
+    color: #c0c0cf;
+    background-color: transparent;
+    font-size: 1.2em;
+}
+
+h1.main code:last-child { letter-spacing: 0; }
+
+/* h1.main.visible {
+    margin-top: 20px;
+    opacity: 1;
+} */
+
+h2 {
+    color: #7432b3;
+    text-transform: uppercase;
+    font-size: 2em;
+    font-weight: 400;
+    line-height: 1.53846em;
+    letter-spacing: 1px;
+}
+
+h5 {
+    text-transform: uppercase;
+    font-size: 1.5em;
+    font-weight: 400;
+    line-height: 1.44444em;
+    letter-spacing: 1px;
+}
+
+.mano-alzada {
+    text-transform: none !important;
+    font-family: "Georgia",sans-serif;
+    font-style: italic;
+    font-weight: normal;
+}
+
+ul { padding-left: 0; }
+
+.padding-section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.grey-section { background-color: rgb(245,245,245); }
+
+.divider {
+    width: 20px;
+    margin-bottom: 40px;
+    border-bottom: 3px solid #f213b7;
+}
+
+.subtitle {
+    margin-bottom: 80px;
+    font-family: "Georgia",sans-serif;
+    font-size: 16px;
+    line-height: 1.5em;
+    font-style: italic;
+    color: #ba68c8;
+}
+
+.subtitle i {
+    margin-right: 10px;
+    font-size: 1.5em;
+}
+
+.border-bottom { border-bottom: 1px solid #eee; }
+
+.highlight { color: #f213b7; }
+
+.git a { color: #f213b7; }
+
+.git a:hover { color: #b21294; }
+
+.git i {
+  color: #8f00ff;
+  font-size: 1.75em;
+  margin-right: 1rem;
+}
+
+
+
+
+/* ------------------ ICONOS ------------------*/
+
+.icon::before {
+	height: auto;
+	display: inline-block;
+	margin-right: 10px;
+  padding: 10px 10px 10px 0;
+}
+
+.w3c::before {
+  	content: url(../img/icons/w3c.svg);
+  	width: 60px;
+}
+
+.content_centered { text-align: center; }
+
+
+
+
+/* ------------------ PANTALLA DE CARGA ------------------*/
+
+.overlay {
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+.spinner {
+    top: calc(50% - 0px);
+    left: calc(50% - 60px);
+    position: absolute;
+    height: 120px;
+    width: 120px;
+    animation: rotar 2s infinite linear;
+    border: 2px solid #8f00ff;
+    border-right-color: transparent;
+    border-radius: 50%;
+}
+
+@keyframes rotar {
+    0%    { transform: rotate(0deg);   }
+    100%  { transform: rotate(360deg); }
+}
+
+
+
+
+/* ------------------ ANIMACIONES ------------------*/
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.animatedIntro {
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 2s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  animation-name: fadeIn;
+}
+
+@keyframes slideInUp {
+  from {
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.slideInUp {
+  -webkit-animation-name: slideInUp;
+  animation-name: slideInUp;
+}
+
+
+@-webkit-keyframes rotateIn {
+  from {
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    -webkit-transform: rotate3d(0, 0, 1, -200deg);
+    transform: rotate3d(0, 0, 1, -200deg);
+    opacity: 0;
+  }
+
+  to {
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes rotateIn {
+  from {
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    -webkit-transform: rotate3d(0, 0, 1, -200deg);
+    transform: rotate3d(0, 0, 1, -200deg);
+    opacity: 0;
+  }
+
+  to {
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+
+
+
+/* ------------------ BARRA NAVEGACIÓN ------------------*/
+
+nav {
+  height: 72px;
+  width: 100%;
+  background: #fcfcfc;
+  padding: 0px;
+  border-bottom: 1px solid #d8d8e7;
+  border-top: 1px solid #d8d8e7;
+  z-index: 900;
+  transition: all .5s cubic-bezier(0.190, 0.585, 0.285, 0.865);
+}
+
+nav ul { float: right; }
+
+nav ul li {
+  display:inline-block;
+  position: relative;
+}
+
+nav ul li a {
+  color: #7432b3;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 1.5em;
+  padding: 0 10px;
+  display: block;
+  line-height: 62px;
+  margin: 5px 8px;
+ }
+
+nav i {
+  color: #f277d1;
+  font-size: 1.7em;
+}
+
+.menu-trigger { display:none; }
+
+nav img {
+    width: 60px;
+    height: auto;
+    margin: 5px 10px;
+}
+
+a.index {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+
+.tab_active {
+  color: #f213b7;
+  border-bottom: 4px solid #8f00ff;
+}
+
+
+
+
+/* ------------------ SECCIÓN INTRO ------------------*/
+
+#intro {
+    height: 100vh;
+    background: rgba(0,0,0,0) url("../img/backgrounds/bg-header.jpg") no-repeat fixed center bottom / cover;
+}
+
+
+
+
+/* ------------------ MASONRY ------------------*/
+
+.ae-masonry {
+	-webkit-column-gap: 1.25rem;
+	-moz-column-gap: 1.25rem;
+	column-gap: 1.25rem;
+}
+
+.rk-item {
+  display: block;
+  margin: 0;
+  margin-bottom: .5rem;
+  position: relative;
+  background-color: #e3e3e3;
+}
+
+.rk-item.ae-masonry__item {
+  display: inline-block;
+}
+
+.rk-item img {
+  display: block;
+  width: 100%;
+}
+
+.rk-item:hover .item-meta {
+  opacity: 1;
+  visibility: visible;
+}
+
+.rk-item--flex {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-color: white;
+  border-width: 4px;
+  border-style: solid;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-bottom: 0;
+  overflow: hidden;
+}
+
+.rk-item--flex:after { display: none; }
+
+.rk-item--flex:before {
+  content: "";
+  display: block;
+  padding-top: 100%;
+}
+.rk-item--flex:hover {
+  background-color: #000;
+  background-blend-mode: luminosity;
+}
+
+.rk-item:hover .item-meta {
+  opacity: 1;
+  visibility: visible;
+}
+
+.item-meta {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(255, 255, 255, .85);
+  bottom: 0;
+  color: #8f00ff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: .67rem;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+          justify-content: center;
+  left: 0;
+  margin: auto;
+  opacity: 0;
+  padding: 2%;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  -webkit-transition: opacity .5s;
+          transition: opacity .5s;
+  top: 0;
+}
+
+.item-meta h2 { font-size: 3em; }
+
+.item-meta p {
+  font-size: 2.5em;
+  line-height: 1.3em;
+  margin-bottom: 0;
+  color: #f213b7;
+  text-align: center;
+}
+
+
+
+
+/* ------------------ SECCIÓN PROYECTOS ------------------*/
+
+#proyectos {
+    box-shadow: inset 0px 10px 20px rgba(0,0,0,.05);
+    text-align: center;
+}
+
+#proyectos .row h2 { text-align: left; }
+
+#proyectos i {
+    padding: 10px 20px 10px 10px;
+    font-size: 32px;
+    color: #bd9f86;
+}
+
+
+
+
+/* ------------------ SECCIÓN CONOCIMIENTOS INTRODUCCIÓN ------------------*/
+
+#skills_intro article i {
+    padding: 10px 10px 10px 0;
+    text-align: left;
+    font-size: 32px;
+    color: #8c3dd8;
+}
+
+#skills_intro h5 {
+  color: #f213b7;
+}
+
+#skills_intro .col-md-4:first-of-type article i {
+  padding: 0;
+  margin: 10px 0;
+}
+
+#skills_intro .col-md-4:first-of-type article i:nth-of-type(2) {
+  margin-left: -15px;
+  font-size: 24px;
+  background-color: white;
+}
+
+#skills_intro .col-md-4:first-of-type article i:last-of-type {
+  padding-right: 10px;
+  margin-left: -10px;
+  font-size: 16px;
+  background-color: white;
+}
+
+
+
+
+/* ------------------ SECCIÓN CONOCIMIENTOS ------------------*/
+
+#skills {
+    padding: 50px 0;
+    background: rgba(0,0,0,0) url("../img/backgrounds/bg-skills.jpg") no-repeat fixed center top / cover;
+}
+
+#skills .elemento {
+    padding: 20px;
+    text-align: center;
+    font-family: "Lato",sans-serif;
+    font-weight: 300;
+}
+
+#skills .marco {
+    padding: 20px;
+    border: 1px solid white;
+    background-color: rgba(255,255,255,0.1);
+}
+
+
+#skills .elemento h5 {
+    margin-top: 20px;
+    text-transform: lowercase;
+    font-family: "Georgia",sans-serif;
+    font-style: italic;
+    color: #fff;
+}
+
+#skills i {
+    margin-bottom: 40px;
+    font-size: 6em;
+    color: white;
+    opacity: 0.6;
+}
+
+#skills .numero {
+    margin-bottom: 30px;
+    font-family: "Montserrat",sans-serif;
+    font-size: 42px;
+    line-height: 60px;
+    font-style: normal;
+    font-weight: 400;
+    color: #fff;
+}
+
+#skills .numero_big {
+  font-size: 60px;
+  line-height: 60px !important;
+  font-weight: normal;
+}
+
+#skills article {
+    text-align: center;
+    position: relative;
+    opacity: 0;
+    transition: all .9s;
+    transform: translateY(100px);
+}
+
+#skills article.visible {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+
+
+
+/* ------------------ SECCIÓN CONOCIMIENTOS PROGRAMACIÓN ------------------*/
+
+#skills_programming li {
+  color: #f213b7;
+  font-size: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+#skills_programming li::before {
+  content: '<';
+  color: #8f00ff;
+}
+
+#skills_programming li::after {
+  content: '>';
+  color: #8f00ff;
+}
+
+#tech img {
+    opacity: 0;
+    transition: all .9s;
+    transform: translateY(100px);
+}
+
+#tech img.visible {
+    opacity: 1;
+    transform: translateY(0px);
+    -webkit-animation-name: rotateIn;
+    animation-name: rotateIn;
+}
+
+/* .rotateIn {
+  -webkit-animation-name: rotateIn;
+  animation-name: rotateIn;
+} */
+
+
+
+
+/* ------------------ SECCIÓN DESCRIPCIÓN CONOCIMIENTOS ------------------*/
+
+#skills_description img {
+  width: 180px;
+  height: auto;
+  opacity: 0.2;
+  margin-bottom: 40px;
+}
+
+#skills_description p { margin-bottom: 10px; }
+
+#skills_description div[class^="progress"] {
+    height: 4px;
+    background: rgba(0,0,0,.2);
+    margin-bottom: 10px;
+    position: relative;
+}
+
+#skills_description div[class^="progress"]:before {
+    content: '';
+    position: absolute;
+    background-color: #8f00ff;
+    height: 100%;
+    left: 0;
+    top: 0;
+    width: 0;
+    transition: all 1s;
+}
+
+#skills_description .visible .progress100:before { width:100%; }
+
+#skills_description .visible .progress80:before { width:80%; }
+
+#skills_description .visible .progress70:before { width:70%; }
+
+
+
+
+/* ------------------ SOBRE MÍ ------------------*/
+
+#sobre_mi.padding-section { padding-bottom: 0; }
+
+#sobre_mi .row { position: relative; }
+
+#sobre_mi .row > div:first-child { padding-bottom: 120px; }
+
+#sobre_mi .row > div:last-child {
+  position: absolute;
+  bottom: -1px;
+  right: 0;
+}
+
+#sobre_mi .img_programming img {
+  width: 550px;
+  height: auto;
+}
+
+
+
+
+/* ------------------ SECCIÓN ITEM ------------------*/
+
+.cover_img {
+	background-position: 50% 100%;
+	background-size: cover;
+  background-repeat: no-repeat;
+	height: 45rem;
+  position: relative;
+}
+
+.cover_img > header {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 0.7);
+  text-align: center;
+  width: 100%;
+  padding: 0 15px;
+}
+
+.cover_img h1 {
+  font-weight: normal;
+  padding: 10px 0px 0;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: #8f00ff;
+}
+
+.cover_img h2 {
+  color: #f213b7;
+  padding-bottom: 10px;
+}
+
+
+
+
+/* ------------------ SECCIÓN FOOTER ------------------*/
+
+footer {
+    text-align: center;
+    background: linear-gradient(to right, #4a137f 0%,#4a137f 70%,#f213b7 100%);
+}
+
+footer .row {
+  display: table;
+  width: 100%;
+}
+
+footer .row  > div {
+  display: table-cell;
+  float: none;
+  vertical-align: middle;
+}
+
+footer img.logo {
+  display: block;
+  margin: 40px 0;
+  opacity: 0.5;
+  width: 100px;
+  height: auto;
+}
+
+footer .email {
+  text-align: right;
+}
+
+footer a {
+  font-size: 1.75rem;
+  color: white;
+  opacity: 0.8;
+}
+
+footer p {
+  color: white;
+  opacity: 0.5;
+}
+
+
+
+
+/* ------------------ MEDIA QUERIES ------------------*/
+
+@media screen and (max-width:767px) {
+
+  .menu-trigger {
+    display:block;
+    color:#8f00ff;
+    font-size: 3rem;
+    float: right;
+    line-height: 62px;
+    padding: 0 10px;
+    margin: 5px 8px;
+  }
+
+  nav ul {
+    display:none;
+    float: none;
+    z-index: 999;
+    background-color: #f5f5f5;
+    position: absolute;
+    width: 100%;
+  }
+
+  nav ul li {
+    display:block;
+    border-top:1px #ccc solid;
+  }
+
+  #skills_description .claimbar { text-align: center; }
+
+  #skills_programming ul { text-align: center; }
+
+  #skills_programming li { display: inline-block; }
+
+  #sobre_mi .row > div:last-child {
+    position: relative;
+  }
+
+  footer .row > div {
+    display: block;
+    text-align: center;
+  }
+
+  footer p {
+    text-align: center;
+    margin: 0 auto 1em;
+  }
+
+  footer .email { margin-bottom: 3em; }
+
+  footer img.logo { margin: 40px auto; }
+
+}
