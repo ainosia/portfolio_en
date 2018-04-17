@@ -670,6 +670,7 @@ a.index {
 	height: 45rem;
   width: auto;
   position: relative;
+  overflow-x: hidden;
 }
 
 .cover_img > header {
