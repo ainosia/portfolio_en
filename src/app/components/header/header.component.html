@@ -1,39 +1,39 @@
 <nav class="menu">
-  <a [routerLink]="['/proyectos']"><img src="assets/img/basic/logo.svg" alt="Logo"></a>
+  <a [routerLink]="['/projects']"><img src="assets/img/basic/logo.svg" alt="Logo"></a>
   <a [routerLink]="['/']" class="menu-trigger">&#9776;</a>
   <ul>
     <li>
       <a
-        [routerLink]="['/proyectos']"
-        fragment="proyectos"
-        class="desplazar"
-        data-nivel="#proyectos">
+        [routerLink]="['/projects']"
+        fragment="projects"
+        class="move"
+        data-nivel="#projects">
         <i class="fas fa-code-branch"></i>
-        Proyectos
+        Projects
       </a>
     </li>
     <li>
       <a
-        [routerLink]="['/conocimientos']"
-        fragment="conocimientos"
-        class="desplazar"
-        data-nivel="#conocimientos">
+        [routerLink]="['/skills']"
+        fragment="skills"
+        class="move"
+        data-nivel="#skills_main">
         <i class="far fa-lightbulb"></i>
-        Conocimientos
+        Skills
       </a>
     </li>
     <li>
       <a
-        [routerLink]="['/sobre_mi']"
-        fragment="sobre_mi"
-        class="desplazar"
-        data-nivel="#sobre_mi">
+        [routerLink]="['/about_me']"
+        fragment="about_me"
+        class="move"
+        data-nivel="#about_me">
         <i class="fas fa-street-view"></i>
-        Sobre mí
+        About me
       </a>
     </li>
     <li>
-      <a href="assets/docs/cv_SoniaVilla.pdf" download="CV.pdf">
+      <a href="assets/docs/cv_SoniaVilla_en.pdf" download="CV.pdf">
         <i class="far fa-file-pdf"></i>
         CV
       </a>

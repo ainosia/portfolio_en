@@ -16,21 +16,21 @@ export class LayoutComponent implements OnInit {
 
     $(window).on('scroll', scrollEffects);
 
-    let nivelIntro, isSticky = false, profundidad;
+    let levelIntro, isSticky = false, depth;
 
     $(document).ready(function() {
         // sistema de desplazamiento vertical
-        $('.desplazar').on('click', navegar);
+        $('.move').on('click', navigate);
 
-        // cálculo de profundidades objetivo
-    	  nivelIntro = $('.stick').offset().top - $('.menu').innerHeight();
+        // Calculate target depth
+    	  levelIntro = $('.stick').offset().top - $('.menu').innerHeight();
     });
 
 
     function scrollEffects() {
-    	profundidad = $(window).scrollTop();
+    	depth = $(window).scrollTop();
     	$('.reveal').each(function() {
-    		if (profundidad >= $(this).offset().top - $(window).innerHeight() / 2) {
+    		if (depth >= $(this).offset().top - $(window).innerHeight() / 2) {
     			let objReveal = $(this);
     			setTimeout(function() {
     				objReveal.addClass('visible');
@@ -39,8 +39,8 @@ export class LayoutComponent implements OnInit {
     });
 
 
-    // Menú "sticky"
-    if (nivelIntro <= profundidad) {
+    // Sticky menu
+    if (levelIntro <= depth) {
     	  if (!isSticky) {
           fixMenu(true);
     		}
@@ -55,22 +55,22 @@ export class LayoutComponent implements OnInit {
     function fixMenu(fix) {
     	if (fix) {
         $('.menu').css({position: 'fixed', top: 0, left: 0});
-        $('#proyectos').css({ marginTop: $('.menu').innerHeight() });
+        $('#projects').css({ marginTop: $('.menu').innerHeight() });
     	  isSticky = true;
     	} else {
         $('.menu').css('position', 'static');
-        $('#proyectos').css({ marginTop: 0 });
+        $('#projects').css({ marginTop: 0 });
         isSticky = false;
     	}
     }
 
 
-    function navegar(e) {
+    function navigate(e) {
       e.preventDefault();
-    	let profundidad = $( $(this).data('nivel') ).offset().top;
-    	let distanciaAbs = Math.abs( $(window).scrollTop() - profundidad );
+    	let depth = $( $(this).data('nivel') ).offset().top;
+    	let distanciaAbs = Math.abs( $(window).scrollTop() - depth );
     	$('body, html').animate({
-    		scrollTop: profundidad
+    		scrollTop: depth
     	}, distanciaAbs * .4);
     }
 
@@ -91,7 +91,7 @@ export class LayoutComponent implements OnInit {
     // });
 
 
-    //Menú responsive
+    // Responsive Menu
     $(document).ready(function() {
       $('.menu-trigger').click(function() {
         $('nav ul').slideToggle(768);

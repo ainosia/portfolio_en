@@ -1,4 +1,4 @@
-/* ------------------ ESTILOS GENERALES ------------------*/
+/* ------------------ COMMON STYLES ------------------*/
 
 
 body {
@@ -73,7 +73,7 @@ h5 {
     letter-spacing: 1px;
 }
 
-.mano-alzada {
+.hand-written {
     text-transform: none !important;
     font-family: "Georgia",sans-serif;
     font-style: italic;
@@ -126,7 +126,7 @@ ul { padding-left: 0; }
 
 
 
-/* ------------------ ICONOS ------------------*/
+/* ------------------ ICONS ------------------*/
 
 .icon::before {
 	height: auto;
@@ -145,7 +145,7 @@ ul { padding-left: 0; }
 
 
 
-/* ------------------ PANTALLA DE CARGA ------------------*/
+/* ------------------ LOADING ------------------*/
 
 .overlay {
     width: 100%;
@@ -177,7 +177,7 @@ ul { padding-left: 0; }
 
 
 
-/* ------------------ ANIMACIONES ------------------*/
+/* ------------------ ANIMATIONS ------------------*/
 
 .animated {
   -webkit-animation-duration: 1s;
@@ -265,7 +265,7 @@ ul { padding-left: 0; }
 
 
 
-/* ------------------ BARRA NAVEGACIÓN ------------------*/
+/* ------------------ NAVBAR ------------------*/
 
 nav {
   height: 72px;
@@ -443,16 +443,16 @@ a.index {
 
 
 
-/* ------------------ SECCIÓN PROYECTOS ------------------*/
+/* ------------------ SECTION PROJECTS ------------------*/
 
-#proyectos {
+#projects {
     box-shadow: inset 0px 10px 20px rgba(0,0,0,.05);
     text-align: center;
 }
 
-#proyectos .row h2 { text-align: left; }
+#projects .row h2 { text-align: left; }
 
-#proyectos i {
+#projects i {
     padding: 10px 20px 10px 10px;
     font-size: 32px;
     color: #bd9f86;
@@ -461,7 +461,7 @@ a.index {
 
 
 
-/* ------------------ SECCIÓN CONOCIMIENTOS INTRODUCCIÓN ------------------*/
+/* ------------------ SECTION SKILLS INTRO ------------------*/
 
 #skills_intro article i {
     padding: 10px 10px 10px 0;
@@ -495,7 +495,7 @@ a.index {
 
 
 
-/* ------------------ SECCIÓN CONOCIMIENTOS ------------------*/
+/* ------------------ SECTION SKILLS ------------------*/
 
 #skills {
     padding: 50px 0;
@@ -563,7 +563,7 @@ a.index {
 
 
 
-/* ------------------ SECCIÓN CONOCIMIENTOS PROGRAMACIÓN ------------------*/
+/* ------------------ SECTION PROGRAMMING SKILLS ------------------*/
 
 #skills_programming li {
   color: #f213b7;
@@ -602,7 +602,7 @@ a.index {
 
 
 
-/* ------------------ SECCIÓN DESCRIPCIÓN CONOCIMIENTOS ------------------*/
+/* ------------------ SECTION SKILLS DESCRIPTION ------------------*/
 
 #skills_description img {
   width: 180px;
@@ -640,21 +640,21 @@ a.index {
 
 
 
-/* ------------------ SOBRE MÍ ------------------*/
+/* ------------------ ABOUT ME ------------------*/
 
-#sobre_mi.padding-section { padding-bottom: 0; }
+#about_me.padding-section { padding-bottom: 0; }
 
-#sobre_mi .row { position: relative; }
+#about_me .row { position: relative; }
 
-#sobre_mi .row > div:first-child { padding-bottom: 120px; }
+#about_me .row > div:first-child { padding-bottom: 120px; }
 
-#sobre_mi .row > div:last-child {
+#about_me .row > div:last-child {
   position: absolute;
   bottom: -1px;
   right: 0;
 }
 
-#sobre_mi .img_programming img {
+#about_me .img_programming img {
   width: 550px;
   height: auto;
 }
@@ -662,7 +662,7 @@ a.index {
 
 
 
-/* ------------------ SECCIÓN ITEM ------------------*/
+/* ------------------ SECTION ITEM ------------------*/
 
 .cover_img {
 	background-position: 50% 100%;
@@ -701,7 +701,7 @@ a.index {
 
 
 
-/* ------------------ SECCIÓN FOOTER ------------------*/
+/* ------------------ SECTION FOOTER ------------------*/
 
 footer {
     text-align: center;
@@ -779,7 +779,7 @@ footer p {
 
   #skills_programming li { display: inline-block; }
 
-  #sobre_mi .row > div:last-child {
+  #about_me .row > div:last-child {
     position: relative;
   }
 

@@ -13,7 +13,7 @@ export class ProjectsService {
 
   public loadProjects() {
     this.loading = true;
-    this.http.get('https://porfolioangular.firebaseio.com/proyectos_idx.json')
+    this.http.get('https://porfolioangularidiomas.firebaseio.com/en_projects_idx.json')
     .subscribe(res => {
       this.loading = false;
       this.projects = res.json();
@@ -21,6 +21,6 @@ export class ProjectsService {
   }
 
   public loadProject(code:string) {
-    return this.http.get(`https://porfolioangular.firebaseio.com/proyectos/${ code }.json`);
+    return this.http.get(`https://porfolioangularidiomas.firebaseio.com/en_projects/${ code }.json`);
   }
 }

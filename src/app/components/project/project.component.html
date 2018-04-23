@@ -1,4 +1,4 @@
-<main id="proyecto" class="stick">
+<main id="project" class="stick">
   <div *ngIf="project">
     <section class="grey-section animated fadeIn">
       <!-- assets/img/projects/{{ code }}/main.png -->
@@ -17,7 +17,7 @@
         <div class="row">
           <div class="col-md-6 col-sm-6">
             <header>
-              <h2>{{ project.remark }} <span class="mano-alzada">{{ project.subtitle }}</span></h2>
+              <h2>{{ project.remark }} <span class="hand-written">{{ project.subtitle }}</span></h2>
             </header>
             <div class="divider"></div>
             <p>{{ project.desc1 }}</p>
@@ -27,7 +27,7 @@
             </p>
           </div>
           <div class="col-md-6 col-sm-6">
-            <img src="assets/img/projects/{{ code }}/pic-1.png" alt="Imagen {{ project.title }}">
+            <img src="assets/img/projects/{{ code }}/pic-1.png" alt="{{ project.title }} image">
           </div>
         </div>
       </div>
@@ -37,7 +37,7 @@
       <div class="container">
         <div class="row">
           <div class="col-xs-12 content_centered">
-            <img src="assets/img/projects/{{ code }}/main.png" alt="Imagen {{ project.title }}">
+            <img src="assets/img/projects/{{ code }}/main.png" alt="{{ project.title }} image">
           </div>
         </div>
       </div>
