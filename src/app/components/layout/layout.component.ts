@@ -54,13 +54,13 @@ export class LayoutComponent implements OnInit {
 
     function fixMenu(fix) {
     	if (fix) {
-        $('.menu').css({position: 'fixed', top: 0, left: 0});
+        $('.menu').css({ position: 'fixed', top: 0, left: 0 });
         $('#projects').css({ marginTop: $('.menu').innerHeight() });
     	  isSticky = true;
     	} else {
-        $('.menu').css('position', 'static');
-        $('#projects').css({ marginTop: 0 });
-        isSticky = false;
+          $('.menu').css('position', 'static');
+          $('#projects').css({ marginTop: 0 });
+          isSticky = false;
     	}
     }
 
@@ -95,6 +95,7 @@ export class LayoutComponent implements OnInit {
     $(document).ready(function() {
       $('.menu-trigger').click(function() {
         $('nav ul').slideToggle(768);
+        $('nav ul').css({ position: 'fixed' });
       });
 
       $('nav ul li').click(function() {
@@ -104,10 +105,11 @@ export class LayoutComponent implements OnInit {
       });
 
       $(window).resize(function() {
-    		if (  $(window).width() >= 768 ) {
+    		if ( $(window).width() >= 768 ) {
     			$('nav ul').css('display', 'none');
-    		 }
+    		}
     	});
     });
+
   }
 }
