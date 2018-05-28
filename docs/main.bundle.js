@@ -182,7 +182,7 @@ var app_routing = __WEBPACK_IMPORTED_MODULE_0__angular_router__["c" /* RouterMod
 /***/ "../../../../../src/app/components/about/about.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<section id=\"about_me\" class=\"stick padding-section grey-section\">\n  <div class=\"container\">\n    <div class=\"row\">\n      <div class=\"col-md-6 col-sm-6\">\n        <header>\n          <h2>About <span class=\"hand-written\">me</span></h2>\n        </header>\n        <div class=\"divider\"></div>\n        <q>\n          I may not know how to do something at first, but rest assured that I will learn how to do it in short\n        </q>\n        <p>\n          Hi, I'm Sonia Villa.\n        </p>\n        <p>\n          After several years working in management positions (first in London and afterwards in Madrid), mainly in development departments, I changed my mind and decided to join the developers crew.\n        </p>\n        <p>\n          At the beginning, I only used to help out with simple tasks and learn in a self-taught way, but after a while, I started taking training courses to be able to carry out more complex tasks.\n        </p>\n        <p>\n          Almost fifteen years later, after endless hours in front of the computer, many courses taken and two careers, I work as a web developer in a startup.\n        </p>\n        <p>\n          I am addicted to reading, to the T.V. series and to chocolate and, in order to relax, I play basketball, go swimming or crochet <i>amigurumis</i>.\n        </p>\n        <p>\n          A couple of years ago I discovered robotics and also do my first steps with Arduino. Next goal: learn Phython.\n        </p>\n      </div>\n      <div class=\"col-md-6 col-sm-6 img_programming\">\n        <img src=\"assets/img/graphic/programming.svg\" alt=\"Programmer\">\n      </div>\n    </div>\n  </div>\n</section>\n"
+module.exports = "<section id=\"about_me\" class=\"stick padding-section grey-section\">\n  <div class=\"container\">\n    <div class=\"row\">\n      <div class=\"col-md-6 col-sm-6\">\n        <header>\n          <h2>About <span class=\"hand-written\">me</span></h2>\n        </header>\n        <div class=\"divider\"></div>\n        <q>\n          I may not know how to do something at first, but rest assured that I will learn how to do it in short\n        </q>\n        <p>\n          Hi, I'm Sonia Villa.\n        </p>\n        <p>\n          After several years working in management positions (first in London and afterwards in Madrid), mainly in development departments, I changed my mind and decided to join the developers crew.\n        </p>\n        <p>\n          At the beginning, I only used to help out with simple tasks and learn in a self-taught way, but after a while, I started taking training courses to be able to carry out more complex tasks.\n        </p>\n        <p>\n          Almost fifteen years later, after endless hours in front of the computer, many courses taken and two careers, I work as a web developer in a startup.\n        </p>\n        <p>\n          I am addicted to reading, to the T.V. series and to chocolate and, in order to relax, I play basketball, go swimming or crochet <i>amigurumis</i>.\n        </p>\n        <p>\n          A couple of years ago I discovered robotics and also do my first steps with Arduino. Next goal: learn Python.\n        </p>\n      </div>\n      <div class=\"col-md-6 col-sm-6 img_programming\">\n        <img src=\"assets/img/graphic/programming.svg\" alt=\"Programmer\">\n      </div>\n    </div>\n  </div>\n</section>\n"
 
 /***/ }),
 
@@ -487,20 +487,6 @@ var LayoutComponent = /** @class */ (function () {
                 scrollTop: depth
             }, distanciaAbs * .4);
         }
-        // $(document).ready(function () {
-        //   $(document).on("scroll");
-        //
-        //   // Enlaces activos
-        //   $('.menu ul li a').on('click', function (e) {
-        //     e.preventDefault();
-        //     $(document).off("scroll");
-        //
-        //     $('.menu ul li a').each(function () {
-        //         $(this).removeClass('tab_active');
-        //     })
-        //     $(this).addClass('tab_active');
-        //   });
-        // });
         // Responsive Menu
         $(document).ready(function () {
             $('.menu-trigger').click(function () {
