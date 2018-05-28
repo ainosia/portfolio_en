@@ -75,22 +75,6 @@ export class LayoutComponent implements OnInit {
     }
 
 
-    // $(document).ready(function () {
-    //   $(document).on("scroll");
-    //
-    //   // Enlaces activos
-    //   $('.menu ul li a').on('click', function (e) {
-    //     e.preventDefault();
-    //     $(document).off("scroll");
-    //
-    //     $('.menu ul li a').each(function () {
-    //         $(this).removeClass('tab_active');
-    //     })
-    //     $(this).addClass('tab_active');
-    //   });
-    // });
-
-
     // Responsive Menu
     $(document).ready(function() {
       $('.menu-trigger').click(function() {
